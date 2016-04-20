@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LOTTO PROBLO DOLLO SWALLO </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="lotto" class="lotto">
+		<span id="ball1" class="ball"></span>
+        <span id="ball2" class="ball"></span>
+        <span id="ball3" class="ball"></span>
+        <span id="ball4" class="ball"></span>
+    </div>
+        <div id="output"></div>
+
+    <div id="input" class="entry">Enter 4 unique numbers 1-10:
+        <form name="form1" action="" method="post" onSubmit="return doStuff(this);">
+            <input type="text" name="in1" id="in1" value="" size="2" required/>
+            <input type="text" name="in2" id="in2" value="" size="2" required/>
+            <input type="text" name="in3" id="in3" value="" size="2" required/>
+            <input type="text" name="in4" id="in4" value="" size="2" required/>
+            <input type="button" name="button1" id="button1" value="Go..." onClick="checkEr();" />
+        </form>
+    </div>
+    <div id="money">You have<span id="dollars"> </span> to spend.</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
